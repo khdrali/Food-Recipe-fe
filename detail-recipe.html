@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Recipe|Food Recipe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--eksternal css-->
+    <link href="detail-recipe.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+            <div class="row">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav">
+                        <li class="nav-item me-5">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item me-5">
+                          <a class="nav-link" href="add-recipe.html">Add Recipe</a>
+                        </li>
+                        <li class="nav-item me-5">
+                          <a class="nav-link" href="profile.html">Profil</a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- content -->
+        <section id="detail-recipe">
+            <div class="container">
+                <div class="detail-image mt-5">
+                    <h2>Burger</h2>
+                    <img src="image/index/burger-image.png" width="400px" height="400px">
+                    <!-- <button type="button" class="btn btn-warning like"><img src="image/Vector (1).png"></button> -->
+                </div>
+               <div class="detail-content">
+                <h3>Ingredients</h3>
+                <p> - 2 eggs
+                    <br>- 2 tbsp mayonnaise
+                    <br>- 3 slices bread
+                    <br>- a little butter
+                    <br>- ⅓ carton of cress
+                    <br>- 2-3 slices of tomato or a lettuce leaf
+                     and a slice of ham or cheese
+                    <br>- crisps , to serve<p>
+               </div>
+               <div class="detail-vidio">
+                <h3>Video Step</h3>
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="video1" data-bs-target="video1">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="video1">
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="video1" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                <div class="mb-4 mt-4">
+                    <label for="Comment" class="form-label"></label>
+                    <input type="text" class="form-control comment" id="Comment" placeholder="Comment">
+                  </div>
+              <div class="d-grid gap-2 col-2 mx-auto">
+                <button class="btn btn-warning" type="button">Comment</button>
+            </div> 
+            <div class="detail-comment">
+                <h3>Comment</h3>
+                <div class="row people-comment">
+                    <img src="image/Ellipse 128.png" width="64px"height="64px" class="col-auto">
+                    <div class="col-auto">
+                        <h5>Ayudia</h5>
+                        <p>Nice recipe. simple and delicious, thankyou</p>  
+                    </div>
+                  </div>
+            </div>
+        </section>
+             <!-- footer -->
+     <footer>
+        <div>
+            <h2>Eat, Cook, Repeat</h2>
+            <p>Share your best recipe by uploading here !</p>
+            <div class="footer-link">
+                <p>Copyright 2022 by Khaidar Ali. All Right Reserved.</p>
+            </div>
+        </div>
+     </footer>
+     <script>
+        window.addEventListener('scroll',()=>{
+            if(window.pageYOffset>555){
+                document.querySelector('.navbar').classList.add('navbar-background')
+            }else{
+                document.querySelector('.navbar').classList.remove('navbar-background')
+            }
+        })
+     </script>
+    </body>
+</html>
