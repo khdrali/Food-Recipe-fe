@@ -70,6 +70,9 @@ body{
     #header{
         margin-top: 70px;
     }
+    #header .overlay{
+        background-color: unset;
+    }
     #header,
     #header .background-grid {
         display: flex;
@@ -79,11 +82,12 @@ body{
         flex-direction: column-reverse!important;
     }
     #header .background-grid{
-        width: 40vh !important;
+        height: 60vh;
     }
     #header .background-grid .background{
         width: 100%;
         margin-left: -30px;
+        margin-top: 30px;
     }
     #header .background-grid .background-1,
     #header .background-grid .background-2{
