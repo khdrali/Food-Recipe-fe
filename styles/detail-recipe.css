@@ -139,6 +139,13 @@ footer .footer-link p{
 }
 
 @media screen and (max-width:576px){
+    .navbar{
+        position: relative;
+        margin-top: 100px!important;
+    }
+    #detail-recipe{
+        height: 50vh;
+    }
     #detail-recipe .comment{
         width: 390px;
         height: 100px;

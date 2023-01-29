@@ -69,6 +69,7 @@ body{
 @media screen and (max-width:576px) {
     #header{
         margin-top: 70px;
+        height: 80vh;
     }
     #header .overlay{
         background-color: unset;
@@ -82,7 +83,7 @@ body{
         flex-direction: column-reverse!important;
     }
     #header .background-grid{
-        height: 60vh;
+        height: 50vh;
     }
     #header .background-grid .background{
         width: 100%;
@@ -137,6 +138,20 @@ body{
     z-index: 0;
 }
 
+@media screen and (max-width:576px){
+    #new-recipe h2{
+        margin-top: 30px;
+    }
+    #new-recipe .main-image{
+        height: 300px;
+        width: 350px;
+    }
+    #new-recipe .overlay{
+        height: 300px;
+        width: 300px;
+    }
+}
+
 /*CSS popular recipe*/
 
 #popular-recipe .title{
@@ -160,12 +175,13 @@ body{
 #popular-recipe .click-image{
     cursor: pointer;
     height: 400px;
-    object-fit: cover;
     position: relative;
 }
 
 #popular-recipe .click-image img{
     border-radius: 20px;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 #popular-recipe .click-image:hover{
@@ -182,6 +198,17 @@ body{
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     text-shadow: 3px 0px 5px rgba(0,0,0,0.29);
+}
+
+@media screen and (max-width:576px){
+    #popular-recipe .click-image{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+    }
+    #popular-recipe .image-title{
+        font-size: 20px;
+    }
 }
 
 /*pagination*/
