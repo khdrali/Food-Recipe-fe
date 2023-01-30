@@ -57,6 +57,15 @@ color: #3F3A3A;
 
 /* vidio */
 
+#detail-recipe .detail-vidio .btn{
+    background-color: #EFC81A;
+    width: 200px;
+    box-sizing: border-box;
+    border: 5px solid #EFC81A;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
 #detail-recipe .detail-vidio h3{
     font-style: normal;
     font-weight: 450;
@@ -140,11 +149,17 @@ footer .footer-link p{
 
 @media screen and (max-width:576px){
     .navbar{
-        position: relative;
+        background-color: #EFC81A;
+    }
+    #detail-recipe .all{
         margin-top: 100px!important;
     }
+    #detail-recipe .detail-image img{
+        width: 300px;
+        height: 300px;
+    }
     #detail-recipe{
-        height: 50vh;
+        height: 70vh;
     }
     #detail-recipe .comment{
         width: 390px;
